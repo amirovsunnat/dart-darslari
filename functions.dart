@@ -70,4 +70,9 @@ void main() {
   malumotTuriniAniqla([1, 2, 3]); // Output: List
   malumotTuriniAniqla({'key': 'value'}); // Output: Map
   malumotTuriniAniqla({1, 2, 3}); // Output: Unknown
+
+  var salom = () {
+    print('Salom Dunyo!');
+  };
+  salom();
 }
