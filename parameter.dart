@@ -53,5 +53,5 @@ void main(List<String> args) {
   //   ism: "Sunnat",
   // );
 
-  print(uchburchakYuziniHisobla(14, 9));
+  // print(uchburchakYuziniHisobla(14, 9));
 }
