@@ -22,9 +22,11 @@ void main() {
 
   // num son1 = 124;
   // num son2 = 12;
-  // num son3 = 5;
+  // num son3 = 10;
   // num kichikSon = min(son1, son2);
-  // print("Sonlar orasidagi eng kichik son: ${min(son3, kichikSon)}");
+  // print("Sonlar orasidagi eng kichik son: $kichikSon ");
+  // print(
+  //     "$kichikSon va $son3 orasidagi eng kichik son: ${min(son3, kichikSon)}");
 
   // var burchak = 45;
   // var radian = burchak * (pi / 180); // Gradusdan radianlarga o'zgartirish
@@ -38,17 +40,25 @@ void main() {
   // var tanQiymat = tan(radian);
   // print("Tangens: $tanQiymat");
 
-  // var random = Random();
-  // num tasodifiySon = random.nextInt(100);
-  // print("Tasodifiy son: $tasodifiySon");
+  // random
+  var random = Random();
+
+  // 0 dan 99 gacha bo'lgan tasodifiy butun son
+  // print('Tasodifiy butun son: ${random.nextInt(100)}');
+
+  // // 0.0 dan 1.0 gacha bo'lgan tasodifiy haqiqiy son
+  // print("Tasodifiy o'nlik son: ${random.nextDouble()}");
+
+  // // Tasodifiy mantiqiy qiymat
   // print('Tasodifiy mantiqiy qiymat: ${random.nextBool()}');
 
-  // print('Tasodifiy haqiqiy son: ${(random.nextDouble()).round()}');
+  num son5 = 14.1;
+  // print(son5.round());
 
-  double son5 = 5;
-  double eksponent = exp(son5);
-  print('e ning $son5 darajasi: $eksponent');
+  double son6 = 10;
+  double eksponent = exp(son6);
+  print('e ning ${son6.round()} darajasi: $eksponent');
 
   double logarifmQiymati = log(eksponent);
-  print('$eksponent ning tabiiy logarifmi: $logarifmQiymati');
+  print('$eksponent ning tabiiy logarifmi: ${logarifmQiymati.round()}');
 }
