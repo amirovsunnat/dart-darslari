@@ -1,10 +1,10 @@
-import 'ozgaruvchilar_2.dart';
-
 void main() {
   var maktablar = List<String>.filled(15, "Maktab");
   // print(maktablar);
   // maktablar.add("Maktab1");
   // print(maktablar);
+  maktablar[0] = "Sunnat";
+  print(maktablar);
 
   // growable list (o'suvchan list)
   List<String> futbolistlar = [
