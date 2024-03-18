@@ -99,7 +99,7 @@ void main(List<String> args) {
 
     // set1 elementi set2 da mavjudimi
     for (int i = 0; i < set2.length; i++) {
-      var a = set1.elementAt(i);
+      var a = set2.elementAt(i);
       if (!set1.contains(a)) {
         return false;
       }
