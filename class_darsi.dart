@@ -1,5 +1,6 @@
 // class yaratishi
 class Mashina {
+  Mashina() {}
   // properties
   String? nomi;
   double? narxi;
