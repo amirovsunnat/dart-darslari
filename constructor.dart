@@ -56,6 +56,8 @@ void main(List<String> args) {
   // HP hp = HP(nomi: "Victus", yili: 2023);
   // print(hp.hpHaqida());
   Ishchi manager = Ishchi("Bobur", "Abdurashitov", "Manager", 25, 1500);
+  manager.familiyasi = "Amirov";
+  print(manager.familiyasi);
   print(manager.ishchiHaqida());
   Ishchi sotuvchi = Ishchi.maoshSiz("Shiroq", "Safarov", "Sotuvchi", 20);
   print(sotuvchi.ishchiHaqida());
