@@ -50,14 +50,14 @@ void main(List<String> args) {
   // Farzand farzand = Farzand();
   // farzand.haqida();
 
-  List<Shakl> shakllar = [Aylana(), Kvadrat()];
+  // List<Shakl> shakllar = [Aylana(), Kvadrat()];
 
-  for (var shakl in shakllar) {
-    shakl.chizmoq();
-    if (shakl is Aylana) {
-      shakl.ranggaBoyash("Ko'k");
-    } else if (shakl is Kvadrat) {
-      shakl.yuzaniHisoblash(10);
-    }
-  }
+  // for (var shakl in shakllar) {
+  //   shakl.chizmoq();
+  //   if (shakl is Aylana) {
+  //     shakl.ranggaBoyash("Ko'k");
+  //   } else if (shakl is Kvadrat) {
+  //     shakl.yuzaniHisoblash(10);
+  //   }
+  // }
 }
