@@ -28,7 +28,10 @@ class Kompyuter {
   }
 }
 
+enum Rang { Qizil, Yashil, Kok }
+
 void main(List<String> args) {
+  print(Rang.Qizil.name);
   // Shaxmat shaxmat = Shaxmat();
   // Shaxmat shaxmat1 = Shaxmat();
   // Shaxmat.display();
@@ -48,3 +51,16 @@ void main(List<String> args) {
 void counterQiymatiniOshirish() {
   StaticClass.counter += 1;
 }
+
+enum CompanyType {
+  soleProprietorship("Sole Proprietorship"),
+  partnership("Partnership"),
+  corporation("Corporation"),
+  limitedLiabilityCompany("Limited Liability Company");
+
+  // Members
+  final String text;
+  const CompanyType(this.text);
+}
+
+
