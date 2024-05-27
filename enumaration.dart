@@ -8,10 +8,13 @@ enum Rang {
 }
 
 class Mashina {
-  String? ism;
+  String? nomi;
   Rang? rang;
 
-  Mashina({this.ism, this.rang});
+  Mashina({
+    this.nomi,
+    this.rang,
+  });
 }
 
 void main() {
@@ -37,38 +40,39 @@ void main() {
   //     print("Rang topilmadi");
   // }
   List<Rang> ranglar = Rang.values;
-  print(ranglar);
-  print(tanlanganRang.name);
+  // print(ranglar);
+  // print(tanlanganRang.name);
 
-  // indexlarni olish
-  print("${Rang.Qizil.name} rangning indexi: ${Rang.Qizil.index}"); // 0
-  print("${Rang.Yashil.name} rangning indexi: ${Rang.Yashil.index}"); // 2
-  print("${Rang.Kok.name} rangning indexi: ${Rang.Kok.index}"); // 1
-  print("${Rang.Sariq.name} rangning indexi: ${Rang.Sariq.index}"); // 3
-  print("${Rang.Malla.name} rangning indexi: ${Rang.Malla.index}"); // 4
+  // // indexlarni olish
+  // print("${Rang.Qizil.name} rangning indexi: ${Rang.Qizil.index}"); // 0
+  // print("${Rang.Yashil.name} rangning indexi: ${Rang.Yashil.index}"); // 2
+  // print("${Rang.Kok.name} rangning indexi: ${Rang.Kok.index}"); // 1
+  // print("${Rang.Sariq.name} rangning indexi: ${Rang.Sariq.index}"); // 3
+  // print("${Rang.Malla.name} rangning indexi: ${Rang.Malla.index}"); // 4
 
-  // enum funksiyalarda argument sifatida
+  // funksiyalarda enum
   void rangniChopEt(Rang rang) {
     print("Tanlangan rang: ${rang.name}");
   }
 
-  rangniChopEt(Rang.Malla);
+  rangniChopEt(Rang.Qizil);
 
-// classlarda enum property hisobida
+  // classlarda misol
   Mashina mashina = Mashina(
-    ism: "Gentra",
-    rang: Rang.Kok,
+    nomi: "Gentra",
+    rang: Rang.Qizil,
   );
+
   print(mashina.rang!.name);
 
-  var yakkaTadbirkorlik = KompaniyaTuri.yakkaTadbirkorlik;
-  print(yakkaTadbirkorlik.matn);
+  KompaniyaTuri sherikchilik = KompaniyaTuri.sherikchilik;
+  print(sherikchilik.matn);
 }
 
 // murakkab enum
 enum KompaniyaTuri {
   yakkaTadbirkorlik("Yakka Tadbirkorlik"),
-  sherikchilik("Sherikchilik"),
+  sherikchilik("Sherikchilik kompaniya turi"),
   korporatsiya("Korporatsiya"),
   masuliyatiCheklanganJamiyat("Mas'uliyati Cheklangan Jamiyat");
 
