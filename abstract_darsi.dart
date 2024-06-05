@@ -15,7 +15,7 @@
 // }
 
 // transport abstract klass
-abstract class Transport {
+abstract class Transport {  
   // yolovchiSigimi abstract method
   int yolovchiSigimi();
 
