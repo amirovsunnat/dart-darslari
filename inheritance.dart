@@ -1,3 +1,4 @@
+// ignore_for_file: public_member_api_docs, sort_constructors_first
 // ota klass
 // class Ota {
 //   String? ism;
@@ -69,12 +70,12 @@ class Avtomobil extends Transport {
   Avtomobil(String brend, String model, int yil, this.eshiklarSoni)
       : super(brend, model, yil);
 
-  @override
-  void ishgaTushirish() {
-    super
-        .ishgaTushirish(); // Transport sinfining ishgaTushirish metodini chaqiradi
-    print("Avtomobil ${this.model} haydashga tayyor!");
-  }
+  // @override
+  // void ishgaTushirish() {
+  //   super
+  //       .ishgaTushirish(); // Transport sinfining ishgaTushirish metodini chaqiradi
+  //   print("Avtomobil ${this.model} haydashga tayyor!");
+  // }
 
   void avtomobilMalumotlariniKorsatish() {
     super.malumotlarniKorsatish(); // Umumiy transport ma'lumotlarini ko'rsatadi
@@ -206,3 +207,4 @@ void main() {
   oqituvchi.tanishtirish();
   oqituvchi.darsBerish();
 }
+
