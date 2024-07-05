@@ -1,5 +1,3 @@
-import 'hayvon_mixin.dart';
-
 class Hayvon {
   String turi;
 
